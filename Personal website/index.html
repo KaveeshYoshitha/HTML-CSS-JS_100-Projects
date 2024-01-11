@@ -28,7 +28,7 @@
 
         <div class="content">
 
-            <h1 class="welcome-text"><span class="welcome-text-span">Hello, I'm</span><br> Kaveesh Yoshitha</h1>
+            <h1 class="welcome-text"><span class="welcome-text-span">Hello, I'm</span><br> <span class="typing">Kaveesh Yoshitha</span></h1>
 
             <p class="slogan">
               Crafting Digital Experiences: Journeying as a Frontend Developer from
@@ -80,11 +80,10 @@
         <!-- qualification part start -->
 
         <div class="qualification-btn-bar">
-          <ul>
-            <li><a onclick="skillQualification" id="skills" href="">skills</a></li>
-            <li><a onclick="educationQualification" id="education" href="">Education</a></li>
-            <li><a onclick="certificationsQualification" id="certifications" href="">Certifications</a></li>
-          </ul>
+          <ul id="qualification-type">
+            <li><a onclick="skillQualification(event)" id="skills" href="#">skills</a></li>
+            <li><a onclick="educationQualification()" id="education" href="">Education</a></li>
+            <li><a onclick="certificationsQualification()" id="certifications" href="">Certifications</a></li>
 
           <div class="qualification-output" id="qualification-display">
             <!-- <ul>
@@ -102,6 +101,8 @@
               <li>MongoDB</li>
             </ul> -->
           </div>
+        </ul>
+
         </div>
 
         <!-- qualification part ends -->
@@ -180,5 +181,6 @@
     </main>
 
     <script src="script.js"></script>
+    
   </body>
 </html>
